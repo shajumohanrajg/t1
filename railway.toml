@@ -1,8 +1,9 @@
-{
-  "build": {
-    "command": "pip install -r requirements.txt"
-  },
-  "start": {
-    "command": "python manage.py runserver"
-  }
-}
+# railway.toml
+
+# Build section
+[build]
+command = "pip install -r requirements.txt"
+
+# Start section
+[start]
+command = "python manage.py runserver"
