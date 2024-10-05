@@ -4,5 +4,5 @@ command = "pip install -r requirements.txt && python manage.py migrate"
 [start]
 command = "python manage.py runserver 0.0.0.0:8000"
 
-gunicorn your_project_name.wsgi --bind 0.0.0.0:$PORT
+gunicorn t1.wsgi --bind 0.0.0.0:$PORT
 
