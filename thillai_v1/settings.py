@@ -98,7 +98,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://192.168.11.86:3000",
-    "http://192.168.11.149:8000"
+    "http://192.168.11.149:8000",
+    "https://t1-production-0e49.up.railway.app"
+    
 ]
 
 ROOT_URLCONF = 'thillai_v1.urls'
@@ -213,7 +215,7 @@ AUTHENTICATION_BACKENDS = (
 
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
+    "ACCESS_TOKEN_LIFETIME": timedelta(days=1),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
     "ROTATE_REFRESH_TOKENS": False,
     "BLACKLIST_AFTER_ROTATION": False,
