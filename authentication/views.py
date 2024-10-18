@@ -40,10 +40,10 @@ class RegisterView(generics.GenericAPIView):
         print("Token",token)
         # current_site = get_current_site(request).domain
         # print(current_site)
-        current_site = "http://192.168.11.86:3000/"
+        current_site = "https://t1-production-0e49.up.railway.app/"
         print("Current Site",current_site)
 
-        relative_link = reverse('email-verify')
+        # relative_link = reverse('email-verify')
 
         # absurl = f'https://{current_site}{relative_link}?token={token}'
         absurl = request.build_absolute_uri(reverse('email-verify')) + f"?token={token}"
