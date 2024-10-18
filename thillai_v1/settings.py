@@ -100,7 +100,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://192.168.11.86:3000",
     "http://192.168.11.149:8000",
     "https://t1-production-0e49.up.railway.app",
-    "https://tkm1.netlify.app/tkm_signin"
+    "https://tkm1.netlify.app"
     
 ]
 
