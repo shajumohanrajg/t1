@@ -40,7 +40,7 @@ class RegisterView(generics.GenericAPIView):
         print("Token",token)
         # current_site = get_current_site(request).domain
         # print(current_site)
-        current_site = "https://tkm2.netlify.app/tkm_emailverify/"
+        current_site = "https://tkm1.netlify.app/tkm_emailverify/"
         print("Current Site",current_site)
 
         # relative_link = reverse('email-verify')
@@ -135,7 +135,7 @@ class RequestPasswordResetEmail(generics.GenericAPIView):
             uidb64 = urlsafe_base64_encode(smart_bytes(user.id))
             token = PasswordResetTokenGenerator().make_token(user)
             # current_site = get_current_site(request=request).domain
-            current_site = "https://tkm2.netlify.app/tkm_passwordreset/"
+            current_site = "https://tkm1.netlify.app/tkm_passwordreset/"
 
             relative_link = reverse(kwargs={'uidb64': uidb64, 'token': token})
             # relative_link = reverse('password-reset-confirm',
